@@ -1,124 +1,135 @@
-# House-Price-Analysis---Web-Scraping
-Python web scraping project demonstrating HTML parsing, data extraction, and web content scraping using BeautifulSoup and Requests. Includes scraping hyperlinks, images, HTML tables, and filtering webpage elements.
-The project was completed as part of the **IBM Data Analyst Professional Certificate** and focuses on building foundational web scraping skills for data collection and preprocessing.
+# Stock Revenue Analysis and Dashboard
+
+## Overview
+
+This project demonstrates the process of collecting, cleaning, analyzing, and visualizing financial data using Python. Stock market data is retrieved through the **Yahoo Finance API (yfinance)**, while historical company revenue data is collected through **web scraping** with BeautifulSoup.
+
+The project compares historical stock prices with company revenue trends for **Tesla** and **GameStop**, illustrating how multiple data sources can be combined to generate meaningful business insights.
+
+This project was completed as part of the **IBM Data Analyst Professional Certificate**.
 
 ---
 
 ## Objectives
 
-- Understand the structure of HTML documents
-- Parse webpages using BeautifulSoup
-- Navigate HTML elements and attributes
-- Extract text, hyperlinks, images, and tables
-- Filter webpage elements using BeautifulSoup methods
-- Download webpage content using the Requests library
+- Retrieve historical stock prices using the Yahoo Finance API
+- Extract company revenue data through web scraping
+- Clean and preprocess financial datasets
+- Visualize stock prices and revenue trends
+- Compare market performance with company financial performance
 
 ---
 
 ## Technologies Used
 
 - Python
-- BeautifulSoup (bs4)
-- Requests
 - Pandas
+- Matplotlib
+- BeautifulSoup
+- Requests
+- yfinance
 - Jupyter Notebook
 
 ---
 
 ## Skills Demonstrated
 
+- API Integration
 - Web Scraping
-- HTML Parsing
-- Data Extraction
-- Data Collection
-- BeautifulSoup Navigation
-- HTML Tree Traversal
-- Working with HTML Tags and Attributes
-- Finding Elements with `find()` and `find_all()`
-- Parsing HTML Tables
+- Data Cleaning
+- Data Wrangling
+- Exploratory Data Analysis (EDA)
+- Financial Data Analysis
+- Data Visualization
 - Python Programming
 
 ---
 
-## Project Components
+## Project Workflow
 
-### HTML Parsing
+### 1. Data Collection
 
-- Create BeautifulSoup objects
-- Parse HTML strings
-- Format HTML using `prettify()`
+Historical stock prices were extracted using:
 
-### HTML Navigation
+- Yahoo Finance API (`yfinance`)
 
-- Parent, child, and sibling relationships
-- HTML tags
-- HTML attributes
-- Navigable strings
+Historical quarterly revenue data was extracted using:
 
-### Data Filtering
-
-Use BeautifulSoup methods to locate:
-
-- HTML tags
-- IDs
-- Attributes
-- Strings
-- CSS class attributes
-
-### Web Scraping
-
-Retrieve webpage content using the Requests library and scrape:
-
-- Hyperlinks
-- Images
-- HTML tables
-
-### Table Extraction
-
-Extract structured data from HTML tables including:
-
-- Table rows
-- Table columns
-- Color names
-- Color codes
+- BeautifulSoup
+- Requests
 
 ---
 
-## Libraries
+### 2. Data Cleaning
 
-```python
-BeautifulSoup
-Requests
-Pandas
+The project includes:
+
+- Removing commas and currency symbols
+- Removing null values
+- Removing empty observations
+- Formatting dates
+- Preparing datasets for visualization
+
+---
+
+### 3. Data Visualization
+
+Custom visualizations compare:
+
+- Tesla Stock Price vs Revenue
+- GameStop Stock Price vs Revenue
+
+The dashboard highlights how market performance and company revenue have changed over time.
+
+---
+
+## Project Structure
+
+```
+Stock-Revenue-Analysis/
+│
+├── Revenue Data and Building a Dashboard.py
+├── README.md
+└── screenshots/
+    ├── tesla-dashboard.png
+    ├── gamestop-dashboard.png
+    ├── tesla-stock-data.png
+    └── gamestop-stock-data.png
 ```
 
-Install required packages:
+---
+
+## Required Libraries
 
 ```bash
-pip install beautifulsoup4 requests pandas
+pip install pandas
+pip install matplotlib
+pip install beautifulsoup4
+pip install requests
+pip install yfinance
 ```
+
+---
+
+## Key Features
+- Retrieve stock market data through APIs
+- Extract financial information from HTML tables
+- Clean raw financial datasets
+- Compare revenue with historical stock prices
+- Create publication-quality visualizations
+
 ---
 
 ## Learning Outcomes
 
-After completing this project, I was able to:
+Through this project I learned how to:
 
-- Parse HTML documents using BeautifulSoup
-- Navigate HTML trees and access parent, child, and sibling elements
-- Extract webpage attributes and text
-- Scrape hyperlinks and images
-- Collect structured data from HTML tables
-- Build a foundation for larger-scale web scraping projects
-
----
-
-## Future Improvements
-
-- Scrape data from multiple webpages automatically
-- Export scraped data to CSV files
-- Handle dynamic webpages using Selenium
-- Implement error handling and request retries
-- Respect robots.txt and website scraping policies
+- Integrate multiple data sources
+- Retrieve financial data using APIs
+- Extract structured data from websites
+- Clean real-world datasets
+- Build comparative financial visualizations
+- Communicate insights using Python
 
 ---
 
