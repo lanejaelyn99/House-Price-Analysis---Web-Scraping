@@ -77,7 +77,9 @@ The project includes:
 Custom visualizations compare:
 
 - Tesla Stock Price vs Revenue
+![Tesla Dashboard](Tesla Stock Graph Dashboard.png)
 - GameStop Stock Price vs Revenue
+![GameStop Dashboard](GameStop Stock Graph Dashboard.png)
 
 The dashboard highlights how market performance and company revenue have changed over time.
 
@@ -86,15 +88,13 @@ The dashboard highlights how market performance and company revenue have changed
 ## Project Structure
 
 ```
-Stock-Revenue-Analysis/
+Stock-Revenue-Analysis-and-Dashboard/
 │
 ├── Revenue Data and Building a Dashboard.py
 ├── README.md
 └── screenshots/
-    ├── tesla-dashboard.png
-    ├── gamestop-dashboard.png
-    ├── tesla-stock-data.png
-    └── gamestop-stock-data.png
+    ├── Tesla Stock Graph Dashboard.png
+    └── GameStop Stock Graph Dashboard.png
 ```
 
 ---
